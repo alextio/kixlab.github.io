@@ -2,6 +2,20 @@
 
 Our lab's website. We are using Jekyll, a static website generator.
 
+## Developing
+Since this website is built on Jekyll, it's best to use Docker. 
+Setup instructions originally taken from [here](https://www.youtube.com/watch?v=zijOXpZzdvs).
+1. Download and install Docker Desktop
+2. In VSCode, install two extensions from Microsoft:
+   - Dev Containers
+   - Docker
+3. Hit `Ctrl-P` to open the command palette. Run the command: `Dev Containers: Open folder in container`
+4. When prompted, select the Dockerfile option
+5. When prompted for other features, just select the Ok button
+6. VSC will start to build the docker container. Go make some coffee or tea
+7. If all goes well, you will be dropped in the docker environment. Run the command `./run-once.sh`
+8. Ruby will install all the dependencies. If no errors, then run `bundle exec jekyll serve --livereload`
+
 ## Adding content
 
 ### Member information
